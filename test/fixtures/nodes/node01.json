@@ -1,0 +1,27 @@
+{
+  "name": "node01",
+  "chef_environment": "_default",
+  "json_class": "Chef::Node",
+  "automatic": {
+    "hostname": "vagrant.vm",
+    "recipes": [
+      "embulk::default"
+    ],
+    "roles": [
+    ],
+    "ipaddress": "10.0.10.1"
+  },
+  "tags": [
+    "app"
+  ],
+  "normal": {
+  },
+  "chef_type": "node",
+  "default": {
+  },
+  "override": {
+  },
+  "run_list": [
+    "recipe[embulk::default]"
+  ]
+}
